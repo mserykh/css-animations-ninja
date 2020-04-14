@@ -18,8 +18,10 @@ body {
     color: white;
     border-radius: 50px;
     cursor: pointer;
+    transition: background 1s, transform 0.5s 0.2s ease-in;
 }
 
 .circle:hover {
     background: salmon;
+    transform: rotate(360deg);
 }
