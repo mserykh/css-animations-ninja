@@ -19,3 +19,7 @@ body {
     border-radius: 50px;
     cursor: pointer;
 }
+
+.circle:hover {
+    background: salmon;
+}
