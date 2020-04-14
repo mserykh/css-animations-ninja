@@ -15,6 +15,7 @@ body {
     line-height: 0;
     margin: 60px auto;
     background: pink;
+    color: white;
     border-radius: 50px;
     cursor: pointer;
 }
