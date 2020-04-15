@@ -62,6 +62,15 @@ html, body{
         animation-timing-function: linear;
 }
 
+.cloud{
+    position: absolute;
+}
+.cloud:nth-child(1){
+    width: 200px;
+    top: 120px;
+    opacity: 0.5;
+}
+
 @keyframes drive{
     from{transform: translateX(-200px)}
     to{transform: translateX(1000px)}
