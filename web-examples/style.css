@@ -39,12 +39,12 @@ p{
     box-sizing: border-box;
 }
 
-    #pop-up input {
-        padding: 10px;
-        border: 0;
-        border-radius: 10px 0 0 10px;
-        border: 1px solid #333;
-        font-size: 18px;
+#pop-up input {
+    padding: 10px;
+    border: 0;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #333;
+    font-size: 18px;
     }
 
     button{
@@ -73,11 +73,20 @@ p{
 
     #pop-up{
         top: -400px;
-        animation: drop 0.5s ease forwards;
+        transform-origin: 10px 10px;
+        animation: drop 0.5s ease forwards,
+                    swing 2s 2s ease forwards;
     }
 
     @keyframes drop{
         0%{opacity: 0}
         70%{ transform: translateY(700px) }
         100%{ transform: translateY(650px); opacity: 1; }
+    }
+
+    @keyframes swing{
+        0%{ transform: translateY(650px) rotateZ(0deg) }
+        40%{ transform: translateY(650px) rotateZ(90deg) }
+        70%{ transform: translateY(650px) rotateZ(70deg) }
+        100%{ transform: translateY(650px) rotateZ(75deg) }
     }
