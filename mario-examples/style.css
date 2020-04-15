@@ -49,7 +49,13 @@ html, body{
     animation-iteration-count: infinite;
 }
 
+    .luigi{
+        position: absolute;
+        top: 100px;
+        left: 0;
+}
+
 @keyframes drive{
-    from{transform: translateX(-200px)}
-    to{transform: translateX(1600px)}
+    from{transform: translateX(-100px)}
+    to{transform: translateX(1000px)}
 }
