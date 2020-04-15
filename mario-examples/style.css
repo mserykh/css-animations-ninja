@@ -43,11 +43,8 @@ html, body{
     position: absolute;
     top: -40px;
     left: 0px;
-    animation-name: drive;
-    animation-duration: 3s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation: drive 3s both infinite cubic-bezier(0.42, 0, 0.58, 1),
+                jump 0.3s 1.2s ease;
 }
 
     .luigi{
@@ -86,4 +83,10 @@ html, body{
 @keyframes wind{
     from{left: -300px}
     to{left: 100%}
+}
+
+@keyframes jump{
+    0%{ top: -40px }
+    50%{ top: -100px }
+    100% {top: -40px }
 }
