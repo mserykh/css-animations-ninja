@@ -47,6 +47,7 @@ html, body{
     animation-duration: 3s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
 
     .luigi{
@@ -57,12 +58,11 @@ html, body{
         animation-duration: 5s;
         animation-fill-mode: both;
         animation-iteration-count: infinite;
-        animation-direction: reverse;
-        transform: 
-
+        animation-direction: reverse;  
+        animation-timing-function: linear;
 }
 
 @keyframes drive{
     from{transform: translateX(-200px)}
-    to{transform: translateX(2000px)}
+    to{transform: translateX(1000px)}
 }
